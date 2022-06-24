@@ -17,7 +17,7 @@ gridGenerator(16);
 function testColor() {
     const squares = document.querySelectorAll('.squares');
     squares.forEach(squares => {
-        squares.addEventListener('mouseover', () => {       //can also use mouseenter but needs a click to start
+        squares.addEventListener('mouseenter', () => {      
             squares.style.backgroundColor = 'pink';
         });
     });
