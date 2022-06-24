@@ -2,7 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: indigo;
+    color: rgb(212, 126, 168);
     font-weight: 500;
     font-size: 30px;
     
@@ -18,7 +18,7 @@ body {
 .grid {
     outline: 2px;
     outline-style: solid;
-    outline-color: indianred;
+    outline-color: pink;
     width: 640px;
     height: 640px;
     margin: 10px;
@@ -31,13 +31,8 @@ body {
 .squares {
    outline: 1px;
    outline-style: solid;
-   outline-color: blue; 
+   outline-color: rgb(232, 232, 232); 
    width: 40px;
    height: 40px;
-   flex: 1 0 auto;
-   
-}
-
-.squaresHover{
-    background-color: aquamarine;
+   flex: 1 0 auto;  
 }
