@@ -27,7 +27,8 @@ body {
     flex-wrap: wrap;
 }
 
-.testDiv {
+/* Class for JS generated boxes inside the .grid div */
+.squares {
    outline: 1px;
    outline-style: solid;
    outline-color: blue; 
