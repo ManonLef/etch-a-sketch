@@ -1,8 +1,21 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: indigo;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.header {
+    margin: 10px;
+}
+
 .grid {
     outline: 3px;
     outline-style: solid;
     outline-color: indianred;
-    max-width: 640px;
+    width: 640px;
     height: 640px;
     margin: 10px;
     
