@@ -9,6 +9,18 @@ function gridGenerator(gridWidth) {
         squares.classList.add('squares');
         grid.appendChild(squares);
     }
+    testColor();
 }
 
 gridGenerator(16);
+
+function testColor() {
+const squares = document.querySelectorAll('.squares');
+squares.forEach(squares => {
+    squares.addEventListener('mouseover', () => {
+        squares.style.backgroundColor = 'black';
+    });
+});
+    
+}
+

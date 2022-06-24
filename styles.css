@@ -16,7 +16,7 @@ body {
 }
 
 .grid {
-    outline: 3px;
+    outline: 2px;
     outline-style: solid;
     outline-color: indianred;
     width: 640px;
@@ -36,4 +36,8 @@ body {
    height: 40px;
    flex: 1 0 auto;
    
+}
+
+.squaresHover{
+    background-color: aquamarine;
 }
