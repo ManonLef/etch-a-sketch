@@ -2,7 +2,20 @@
     outline: 3px;
     outline-style: solid;
     outline-color: indianred;
-    width: 640px;
+    max-width: 640px;
     height: 640px;
     margin: 10px;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testDiv {
+   outline: 1px;
+   outline-style: solid;
+   outline-color: blue; 
+   width: 40px;
+   height: 40px;
+   flex: 1 0 auto;
+   
 }
