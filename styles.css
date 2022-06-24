@@ -5,6 +5,10 @@ body {
     color: indigo;
     font-weight: 500;
     font-size: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
