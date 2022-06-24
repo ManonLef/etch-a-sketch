@@ -12,7 +12,8 @@ body {
 }
 
 .header {
-    margin: 10px;
+    margin: 20px 10px;
+    font-weight: 700;
 }
 
 .grid {
@@ -29,7 +30,7 @@ body {
 
 /* Class for JS generated boxes inside the .grid div */
 .squares {
-   outline: 1px;
+   outline: 0.01em;
    outline-style: solid;
    outline-color: rgb(232, 232, 232); 
    width: 40px;
