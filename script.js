@@ -1,15 +1,16 @@
-const gridButton = document.querySelector('.gridButton');
-gridButton.addEventListener('click', () => {
-    let pixelAmount = prompt("How many squares wide would you like the grid to be?");
-    gridGenerator(pixelAmount);
-});
-
-
-
-const grid = document.querySelector('.grid');
+const gridContainer = document.querySelector('.gridContainer');
 const gridPrompt = document.querySelector('.gridPrompt');
 
+// button to change gridsize and start grid generation
+const gridButton = document.querySelector('.gridButton');
+gridButton.addEventListener('click', () => {
+    let gridSize = prompt("How many squares wide would you like the grid to be?");
+    gridGenerator(gridSize);
+});
+
 function gridGenerator(gridWidth) {
+    // first empty any divs in there
+
     for (let i = 0; i < (gridWidth * gridWidth); i++) {
         let sides = 640/gridWidth + "px";
         const squares = document.createElement('div');
@@ -18,7 +19,7 @@ function gridGenerator(gridWidth) {
          squares.style.width = sides;
          squares.style.height = sides;
          //
-        grid.appendChild(squares);
+        gridContainer.appendChild(squares);
         
     }
     testColor();

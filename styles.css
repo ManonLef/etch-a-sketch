@@ -16,7 +16,7 @@ body {
     font-weight: 700;
 }
 
-.grid {
+.gridContainer {
     outline: 2px;
     outline-style: solid;
     outline-color: pink;
