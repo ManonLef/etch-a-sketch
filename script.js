@@ -5,15 +5,15 @@ const gridPrompt = document.querySelector('.gridPrompt');
 const gridButton = document.querySelector('.gridButton');
 gridButton.addEventListener('click', () => {
     let gridSize = prompt("How many squares wide would you like the grid to be?\nPlease enter a number between 2 and 100");
-    // limit grid size to 100
-    if (gridSize > 100 || gridSize < 2 || typeof(gridSize) === 'string') {
-        if (gridSize > 100 || gridSize < 2) {
-            gridSize = prompt("please pick a number between 2 and 100");
+    //
+    while (gridSize > 100 || gridSize < 2 || isNaN(gridSize)) {
+        if (isNaN(gridSize)) {
+            gridSize = prompt("Only numbers are supported\nplease pick a number between 2 and 100");
         } else {
-            gridSize = prompt("Only numbers are supported\nPlease pick a number between 2 and 100");
+            gridSize = prompt("Please pick a number between 2 and 100");
         }
-        
     }
+    //
     gridGenerator(gridSize);
 });
 
