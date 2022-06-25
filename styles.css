@@ -29,7 +29,7 @@ button {
 .gridContainer {
     outline: 2px;
     outline-style: solid;
-    outline-color: pink;
+    outline-color: rgb(212, 126, 168);
     width: 640px;
     height: 640px;
     margin: 10px;
