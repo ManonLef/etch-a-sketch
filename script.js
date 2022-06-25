@@ -9,8 +9,9 @@ gridButton.addEventListener('click', () => {
 });
 
 function gridGenerator(gridWidth) {
-    // first empty any divs in there
-
+    // empty if squares are already present
+    removeSquares(gridContainer)
+    // generate squares
     for (let i = 0; i < (gridWidth * gridWidth); i++) {
         let sides = 640/gridWidth + "px";
         const squares = document.createElement('div');
@@ -18,9 +19,8 @@ function gridGenerator(gridWidth) {
          //css to change width and height
          squares.style.width = sides;
          squares.style.height = sides;
-         //
+         // appends the generated divs/squares
         gridContainer.appendChild(squares);
-        
     }
     testColor();
 }
@@ -35,6 +35,12 @@ function testColor() {
     });
 }
 
+//function to empty existing squares before setting a new grid size
+function removeSquares(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
 
 
 
