@@ -38,12 +38,10 @@ button {
     flex-wrap: wrap;
 }
 
-/* Class for JS generated boxes inside the .grid div */
+/* Class for JS generated boxes/squares inside the .gridContainer div */
 .squares {
    outline: 0.01em;
    outline-style: solid;
    outline-color: rgb(232, 232, 232); 
-   /*width: 40px;
-   height: 40px;*/
    flex: 1 0 auto;  
 }
