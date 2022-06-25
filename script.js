@@ -4,7 +4,16 @@ const gridPrompt = document.querySelector('.gridPrompt');
 // button to change gridsize and start grid generation
 const gridButton = document.querySelector('.gridButton');
 gridButton.addEventListener('click', () => {
-    let gridSize = prompt("How many squares wide would you like the grid to be?");
+    let gridSize = prompt("How many squares wide would you like the grid to be?\nPlease enter a number between 2 and 100");
+    // limit grid size to 100 (consider adding while to keep doing this)
+    if (gridSize > 100 || gridSize < 2) {
+        gridSize = prompt("Please pick a number between 2 and 100");
+    } else  if (typeof gridSize === "string") {
+        gridSize = prompt("Only numerical values are supported\nPlease pick a number between 2 and 100");
+    } else {   
+        gridGenerator(gridSize); 
+    }
+    //
     gridGenerator(gridSize);
 });
 
