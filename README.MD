@@ -25,4 +25,13 @@
 
 - I enjoyed this project. In the future I might get back to it and make it look nicer. For now I feel comfortable to move on since I think the hardest part was DOM manipulation. Adjusting the styling doesn't seem to add to my learning experience for now. 
 
+### Possible features to add:
+
+- [ ] Add a slider for the grid size
+- [ ] Add a colour picker
+- [ ] Make a random colour version as described as optional in the TOP exercise
+- [ ] Use a colour palette for aesthetics
+- [ ] Implement an eraser option
+- [ ] Change the cursor to something fancy like a brush or a default finger
+
 
