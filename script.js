@@ -53,5 +53,5 @@ function removeSquares(parent) {
     }
 }
 
-
+gridGenerator(16);
 
