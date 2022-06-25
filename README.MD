@@ -17,7 +17,7 @@
     - I dabbled with this a bit. I tried a hover effect for the `squares` class but that immediately cleared after the mouse hovered somewhere else. Instead of trying to make it a permanent state I decided to try it adding a style through DOM methods. `mouseenter` and `mouseover` seemed to both have the same effect and I have put it on my list to research more.
 
 - [ ] **Add a button to the top of the screen that will send the user a popup asking for the number of squares per side for the new grid.**
-    - Now for this step I had to get rid of the "hardcoded" bits in css and I added some new variables so I could write a function to determine the size of the squares based on the prompt input. That worked and then it needs to made into a button prompt per the exercise. 
+    - Now for this step I had to get rid of the "hardcoded" sizing in css and I added some new variables so I could write a function to determine the size of the squares based on the prompt input. That worked and then it needs to made into a button prompt per the exercise. 
 
 
 
