@@ -1,23 +1,14 @@
 const gridContainer = document.querySelector('.gridContainer');
 const gridPrompt = document.querySelector('.gridPrompt');
+// slider
+const slider = document.getElementById("myRange");
+const output = document.getElementById("gridSize")
+output.innerHTML = "Grid Size = " + slider.value;
 
-// button to change gridsize and start grid generation 
-// const gridButton = document.querySelector('.gridButton');
-// gridButton.addEventListener('click', () => {
-//     let gridSize = prompt("How many squares wide would you like the grid to be?");
-//     // error prompt conditionals
-//     while (gridSize > 100 || gridSize < 2 || isNaN(gridSize)) {
-//         if (isNaN(gridSize)) {
-//             gridSize = prompt("Only numbers are supported\nplease pick a number between 2 and 100");
-//         } else if (gridSize === null) { //cancel button
-//             break;
-//         } else {
-//             gridSize = prompt("Please pick a number between 2 and 100");
-//         }
-//     }
-
-//     gridGenerator(gridSize);
-// });
+slider.oninput = function() {
+    output.innerHTML = "Grid Size = " + this.value;
+    gridGenerator(this.value);
+}
 
 function gridGenerator(gridWidth) {
     // empty if squares are already present
@@ -55,12 +46,3 @@ function removeSquares(parent) {
 
 gridGenerator(16);
 
-// slider
-let slider = document.getElementById("myRange");
-let output = document.getElementById("demo")
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-    output.innerHTML = this.value;
-    gridGenerator(this.value);
-}

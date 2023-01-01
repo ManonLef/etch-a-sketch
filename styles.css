@@ -46,3 +46,7 @@ button {
    outline-color: rgb(232, 232, 232); 
    flex: 1 0 auto;  
 }
+
+.slidecontainer {
+    display: flex;
+}
