@@ -27,7 +27,7 @@
 
 ### Possible features to add:
 
-- [ ] Add a slider for the grid size
+- [x] Add a slider for the grid size
 - [ ] Add a colour picker
 - [ ] Make a random colour version as described as optional in the TOP exercise
 - [ ] Use a colour palette for aesthetics
