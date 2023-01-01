@@ -55,3 +55,11 @@ function removeSquares(parent) {
 
 gridGenerator(16);
 
+// slider
+let slider = document.getElementById("myRange");
+let output = document.getElementById("demo")
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+    output.innerHTML = this.value;
+}
