@@ -15,6 +15,7 @@ function toggle() {
         eraser.style.backgroundColor = 'lightblue';
     } else {
         eraserOn = false;
+        eraser.style.backgroundColor = 'rgb(212, 126, 168)';
     }
 }
 
