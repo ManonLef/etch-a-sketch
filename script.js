@@ -19,9 +19,9 @@ function toggle() {
     }
 }
 
-slider.oninput = function() {
-    output.innerHTML = "Grid Size = " + this.value;
-    gridGenerator(this.value);
+slider.oninput = () => {
+    output.innerHTML = "Grid Size = " + slider.value;
+    gridGenerator(slider.value);
 }
 
 function gridGenerator(gridWidth) {
@@ -39,6 +39,7 @@ function gridGenerator(gridWidth) {
         gridContainer.appendChild(squares);
     }
     fillColor();
+    output.innerHTML = "Grid Size = " + slider.value;
 }
 
 
