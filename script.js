@@ -5,8 +5,6 @@ const slider = document.getElementById("myRange");
 const output = document.getElementById("gridSize");
 const eraser = document.querySelector("#eraser");
 
-output.innerHTML = "Grid Size = " + slider.value;
-
 eraser.addEventListener("click", toggle);
 
 function toggle() {
