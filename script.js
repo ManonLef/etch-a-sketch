@@ -7,9 +7,9 @@ const eraser = document.querySelector("#eraser");
 
 let eraserOn = false;
 
-eraser.addEventListener("click", toggle);
+eraser.addEventListener("click", eraserToggle);
 
-function toggle() {
+function eraserToggle() {
     if (!eraserOn) {
         eraserOn = true;
         eraser.style.backgroundColor = 'lightblue';
