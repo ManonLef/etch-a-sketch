@@ -31,7 +31,7 @@
 - [ ] Add a colour picker
 - [ ] Make a random colour version as described as optional in the TOP exercise
 - [ ] Use a colour palette for aesthetics
-- [ ] Implement an eraser option
+- [x] Implement an eraser option
 - [ ] Change the cursor to something fancy like a brush or a default finger
 
 

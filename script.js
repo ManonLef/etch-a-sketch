@@ -5,10 +5,16 @@ const slider = document.getElementById("myRange");
 const output = document.getElementById("gridSize");
 const eraser = document.querySelector("#eraser");
 
+let eraserOn = false;
+
 eraser.addEventListener("click", toggle);
 
 function toggle() {
-    document.querySelector("#eraser").disabled = true;
+    if (!eraserOn) {
+        eraserOn = true;
+    } else {
+        eraserOn = false;
+    }
 }
 
 slider.oninput = function() {
@@ -37,8 +43,12 @@ function gridGenerator(gridWidth) {
 function fillColor() {
     const squares = document.querySelectorAll('.squares');
     squares.forEach(squares => {
-        squares.addEventListener('mouseenter', () => {      
-            squares.style.backgroundColor = 'pink';
+        squares.addEventListener('mouseenter', () => {  
+            if (!eraserOn) {    
+                squares.style.backgroundColor = 'pink';
+            } else {
+                squares.style.backgroundColor = '';
+            }
         });
     });
 }
