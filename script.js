@@ -3,11 +3,15 @@ const gridPrompt = document.querySelector('.gridPrompt');
 // slider
 const slider = document.getElementById("myRange");
 const output = document.getElementById("gridSize");
-const eraser = document.querySelector("button");
+const eraser = document.querySelector("#eraser");
 
 output.innerHTML = "Grid Size = " + slider.value;
 
-eraser.disabled = true;
+eraser.addEventListener("click", toggle);
+
+function toggle() {
+    document.querySelector("#eraser").disabled = true;
+}
 
 slider.oninput = function() {
     output.innerHTML = "Grid Size = " + this.value;
