@@ -12,6 +12,7 @@ eraser.addEventListener("click", toggle);
 function toggle() {
     if (!eraserOn) {
         eraserOn = true;
+        eraser.style.backgroundColor = 'lightblue';
     } else {
         eraserOn = false;
     }
