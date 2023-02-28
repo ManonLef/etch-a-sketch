@@ -33,5 +33,7 @@
 - [ ] Use a colour palette for aesthetics
 - [x] Implement an eraser option
 - [ ] Change the cursor to something fancy like a brush or a default finger
+- [ ] Add option to export/save the created image
+- [ ] Add option to paint upon mouseclick only to use it to create pixelart
 
 
